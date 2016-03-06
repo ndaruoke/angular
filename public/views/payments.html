@@ -1,0 +1,240 @@
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="payment-card">
+                <i class="fa fa-cc-visa payment-icon-big text-success"></i>
+                <h2>
+                    **** **** **** 1060
+                </h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <small>
+                            <strong>Expiry date:</strong> 08/16
+                        </small>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <small>
+                            <strong>Name:</strong> Irham Nurhalim
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="payment-card">
+                <i class="fa fa-cc-mastercard payment-icon-big text-warning"></i>
+                <h2>
+                    **** **** **** 7002
+                </h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <small>
+                            <strong>Expiry date:</strong> 09/17
+                        </small>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <small>
+                            <strong>Name:</strong> Irham Nurhalim
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="payment-card">
+                <i class="fa fa-cc-discover payment-icon-big text-danger"></i>
+                <h2>
+                    **** **** **** 3466
+                </h2>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <small>
+                            <strong>Expiry date:</strong> 10/16
+                        </small>
+                    </div>
+                    <div class="col-sm-6 text-right">
+                        <small>
+                            <strong>Name:</strong> Irham Nurhalim
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="col-lg-12">
+
+            <div class="ibox">
+                <div class="ibox-title">
+                    Payment method
+                </div>
+                <div class="ibox-content">
+
+
+                    <accordion class="panel-group payments-method">
+                        <accordion-group is-open="true">
+                            <accordion-heading>
+                                <div class="pull-right">
+                                    <i class="fa fa-cc-paypal text-success"></i>
+                                </div>
+                                <h5 class="panel-title">
+                                    E-Cash Mandiri
+                                </h5>
+                            </accordion-heading>
+                            <div class="panel-body">
+
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <h2>Ringkasan</h2>
+                                        <strong>Produk:</strong>: Dompet Dhuafa <br/>
+                                        <strong>Jumlah:</strong>: <span class="text-navy"> Rp. 50.000</span>
+                                        <p class="m-t">
+                                            Sumbangan paket Rp 50.000
+                                        </p>
+                                        <div class="row">
+                                            <div class="col-xs-7 col-md-7">
+                                                <div class="form-group">
+                                                    <label>Phone Number</label>
+                                                    <input type="text" class="form-control" name="Phone" placeholder="085715559655"  required disabled/>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-5 col-md-5 pull-right">
+                                                <div class="form-group">
+                                                    <label>Pin</label>
+
+                                                    <input type="password" class="form-control" data-mask="147852" placeholder="" ng-model="dataInput5">
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <form>
+                                        <button ng-click="doSubmit()" class="btn btn-success"
+                                           href="http://172.17.34.47/api/v1/e-cash/transfer?to=085715559655&amount=50000&description=Projek_test_1&credentials=153033&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cLzE3Mi4xNy4zNC40N1wvYXBpXC92MVwvYXV0aGVudGljYXRlIiwiaWF0IjoxNDU2NTI5Mzc1LCJleHAiOjIwNTY1MjkzNzUsIm5iZiI6MTQ1NjUyOTM3NSwianRpIjoiNzM2ODI4MmJkOGEzZTkzOGUyOWVkYzY1NGY5NjY1MDkifQ.7e-FVzgByppATpzmdpKk9BAB_0sQE8pwAhU_IK1S--4">
+                                            <i class="fa fa-cc-paypal">
+                                                Purchase via E-Cash
+                                            </i>
+                                        </button>
+                                        <!--<input type="hidden" ng-model="url.input" value="http://172.17.34.47/api/v1/e-cash/transfer?to=085715559655&amount=50000&description=Projek_test_1&credentials=153033&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6XC9cLzE3Mi4xNy4zNC40N1wvYXBpXC92MVwvYXV0aGVudGljYXRlIiwiaWF0IjoxNDU2NTI5Mzc1LCJleHAiOjIwNTY1MjkzNzUsIm5iZiI6MTQ1NjUyOTM3NSwianRpIjoiNzM2ODI4MmJkOGEzZTkzOGUyOWVkYzY1NGY5NjY1MDkifQ.7e-FVzgByppATpzmdpKk9BAB_0sQE8pwAhU_IK1S&#45;&#45;4">-->
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </accordion-group>
+                        <accordion-group>
+                            <accordion-heading>
+                                <div class="pull-right">
+                                    <i class="fa fa-cc-paypal text-success"></i>
+                                </div>
+                                <h5 class="panel-title">
+                                    PayPal
+                                </h5>
+                            </accordion-heading>
+                            <div class="panel-body">
+
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <h2>Ringkasan</h2>
+                                        <strong>Produk:</strong>: Dompet Dhuafa <br/>
+                                        <strong>Jumlah:</strong>: <span class="text-navy"> Rp. 50.000</span>
+                                        <p class="m-t">
+                                            Sumbangan paket Rp 50.000
+                                        </p>
+                                        <a class="btn btn-success">
+                                            <i class="fa fa-cc-paypal">
+                                                Purchase via PayPal
+                                            </i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </accordion-group>
+                        <accordion-group >
+                            <accordion-heading>
+                                <div class="pull-right">
+                                    <i class="fa fa-cc-amex text-success"></i>
+                                    <i class="fa fa-cc-mastercard text-warning"></i>
+                                    <i class="fa fa-cc-discover text-danger"></i>
+                                </div>
+                                <h5 class="panel-title">
+
+                                </h5>
+                            </accordion-heading>
+                            <div class="panel-body">
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <h2>Ringkasan</h2>
+                                        <strong>Produk:</strong>: Dompet Dhuafa <br/>
+                                        <strong>Jumlah:</strong>: <span class="text-navy"> Rp. 50.000</span>
+                                        <p class="m-t">
+                                            Sumbangan paket Rp 50.000
+                                        </p>
+                                    </div>
+                                    <div class="col-md-8">
+
+                                        <form role="form" id="payment-form">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label>CARD NUMBER</label>
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" name="Number" placeholder="Valid Card Number" required />
+                                                            <span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-7 col-md-7">
+                                                    <div class="form-group">
+                                                        <label>EXPIRATION DATE</label>
+                                                        <input type="text" class="form-control" name="Expiry" placeholder="MM / YY"  required/>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-5 col-md-5 pull-right">
+                                                    <div class="form-group">
+                                                        <label>CV CODE</label>
+                                                        <input type="text" class="form-control" name="CVC" placeholder="CVC"  required/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div class="form-group">
+                                                        <label>NAME OF CARD</label>
+                                                        <input type="text" class="form-control" name="nameCard" placeholder="NAME AND SURNAME"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <button class="btn btn-primary" type="submit">Make a payment!</button>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </accordion-group>
+                    </accordion>
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div style="padding-bottom: 45%"></div>
