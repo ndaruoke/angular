@@ -1,0 +1,72 @@
+
+<div class="wrapper wrapper-content animated fadeInRight">
+
+<!--    <div class="row">
+        <div class="col-lg-12">
+            <div class="jumbotron">
+                <h3>Angular Wizard</h3>
+
+                <p>It is example of simple wizard build with Angular plugin - ui-router based on diferent state view. You can use standard angular validation also with this form.</p>
+
+                </p>
+            </div>
+        </div>-->
+
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>Buat Proyek</h5>
+
+                    <div ibox-tools></div>
+                </div>
+                <div class="ibox-content wizard">
+                    <h2>
+                        Judul dan target proyek
+                    </h2>
+
+<!--                    <p>
+                        This example show how to use ui-router to create wizard like form.
+                        <br/>
+                        <strong>Data from ng-model.</strong><br/>
+                        <code>{{ formData}}</code>
+                    </p>-->
+
+                    <div class="steps clearfix">
+                        <ul>
+
+                            <li ui-sref-active="current">
+                                <a ui-sref=".start_one" class="btn-default"><span>1</span> Pengaturan Proyek</a>
+                            </li>
+                            <li ui-sref-active="current">
+                                <a ui-sref=".start_two" class="btn-default"><span>2</span> Profil Tim</a>
+                            </li>
+                            <li ui-sref-active="current">
+                                <a ui-sref=".start_three" class="btn-default"><span>3</span> Detail Proyek</a>
+                            </li>
+                            <li ui-sref-active="current">
+                                <a ui-sref=".start_four" class="btn-default"><span>4</span> Hadiah</a>
+                            </li>
+                            <li ui-sref-active="current">
+                                <a ui-sref=".start_five" class="btn-default"><span>5</span> Detail Pembayaran</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="wizard">
+                        <div class="content">
+
+                        <form name="signupForm" ng-submit="processForm()" class="p-lg">
+
+                            <!-- our nested state views will be injected here -->
+                            <div id="form-views" ui-view></div>
+                        </form>
+
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

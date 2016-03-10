@@ -6764,6 +6764,9 @@ body.landing-page {
     background: #f4f4f4;
     margin-top: 60px;
 }
+.landing-page .white-transparancy-section {
+    background-color: rgba(44, 44, 44, 0.1);
+}
 .landing-page .team-member {
     text-align: center;
 }

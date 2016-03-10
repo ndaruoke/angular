@@ -1,0 +1,78 @@
+<fieldset>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="form-group">
+                <label>Kategori *</label>
+                <div class="input-group">
+                    <select chosen id="business" class="chosen-select" style="width:350px;" tabindex="4" ng-model="business" ng-options="s for s in main.business">
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Nama Proyek *</label>
+                <input  maxlength="35" placeholder="Nama Proyek Anda" id="projectName" ng-model="formData.username" name="projectName" type="text" class="form-control" ng-minlength="5">
+                <p ng-show="signupForm.username.$error.minlength" class="help-block">Judul terlalu singkat (min 5 karakter)</p>
+                <span class="help-block"><div id="projectNameFeedback"></div></span>
+            </div>
+            <div class="form-group">
+                <label>Deskripsi Singkat *</label>
+                <textarea maxlength="120" class="form-control message-input" name="message" placeholder="Isi deskripsi singkat dan jelas proyek anda" id="shortDescription" ng-model="formData.password" name="shortDescription"></textarea>
+                <span class="help-block"><div id="shortDescriptionFeedback"></div></span>
+            </div>
+            <div class="form-group" id="duration">
+                <label>Durasi *</label>
+                <div class="input-group date">
+                    <input type="datetime" class="form-control" date-time ng-model="sampleDate" view="year" auto-close="true">
+                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                </div>
+            </div>
+            <div class="form-group" id="donation">
+                <label>Target Donasi *</label>
+                <div class="input-group m-b"><span class="input-group-addon">Rp</span>
+                    <input type="number" class="form-control" placeholder="" ng-model="dataInput7">
+                    <span class="input-group-addon">.00</span></div>
+                <span class="help-block">Minimum target adalah Rp 100,000.00 </span>
+            </div>
+            <div class="form-group" id="location">
+                <label>Lokasi *</label>
+                <div class="input-group">
+                    <select chosen id="city" class="chosen-select" style="width:350px;" tabindex="4" ng-model="city" ng-options="s for s in main.city">
+                    </select>
+                </div>
+                <span class="help-block">Lokasi tempat proyek anda berjalan </span>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="text-center">
+                <div style="margin-top: 20px">
+                    <i class="fa fa-sign-in" style="font-size: 180px;color: #e5e5e5 "></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a ui-sref="dashboards.start.start_two" class="btn btn-primary">Next</a>
+</fieldset>
+
+<script>
+    $(document).ready(function() {
+        var short_description_max = 120;
+        $('#shortDescriptionFeedback').html(short_description_max + ' karakter tersisa');
+
+        $('#shortDescription').keyup(function() {
+        var text_length = $('#shortDescription').val().length;
+        var text_remaining = short_description_max - text_length;
+
+        $('#shortDescriptionFeedback').html(text_remaining + ' karakter tersisa');
+        });
+
+        var project_name_max = 35;
+        $('#projectNameFeedback').html(project_name_max + ' karakter tersisa');
+
+        $('#projectName').keyup(function() {
+            var text_length = $('#projectName').val().length;
+            var text_remaining = project_name_max - text_length;
+
+            $('#projectNameFeedback').html(text_remaining + ' karakter tersisa');
+        });
+    });
+</script>

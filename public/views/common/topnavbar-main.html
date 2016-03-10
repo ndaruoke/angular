@@ -1,6 +1,6 @@
 <div class="row border-bottom">
     <div class="navbar-wrapper">
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top white-transparancy-section" role="navigation">
             <div class="container">
                 <div class="navbar-header page-scroll">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -9,17 +9,26 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" ui-sref="landing">E-Patungan</a>
+                    <a href="#/dashboards" class="navbar-brand">E-Patungan</a>
+                    <!--<a class="navbar-brand" ui-sref="landing">E-Patungan</a>-->
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="active"><a class="page-scroll" page-scroll href="#/dashboards/search">Temukan</a></li>
+                        <li><a class="page-scroll" page-scroll href="#/dashboards/start/step_one">Mulai proyek</a></li>
+                        <li><a class="page-scroll" page-scroll href="#/dashboards/about">Tentang E-Patungan</a></li>
+                    </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <!--<li class="active"><a class="page-scroll" page-scroll href="#page-top">E-Patungan</a></li>-->
-                        <li class="active"><a class="page-scroll" page-scroll href="#features">Temukan</a></li>
-                        <li><a class="page-scroll" page-scroll href="#testimonials">Mulai proyek</a></li>
-                        <li><a class="page-scroll" page-scroll href="#contact">Tentang E-Patungan</a></li>
-                        <!--<li><a class="page-scroll" page-scroll href="#team">Team</a></li>-->
-                        <!--<li><a class="page-scroll" page-scroll href="#pricing">Pricing</a></li>-->
-
+                        <li>
+                            <a href="#/dashboards/login">
+                                <i class="fa fa-sign-in"></i> Masuk
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#/dashboards/register">
+                                <i class="fa fa-pencil"></i> Daftar
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
